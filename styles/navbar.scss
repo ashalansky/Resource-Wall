@@ -1,0 +1,22 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr
+}
+
+.logo {
+  grid-column: 1;
+}
+
+.search-bar {
+  grid-column: 2;
+  display: flex;
+  width: 100%;
+}
+
+.login {
+  grid-column: 4;
+}
+
+.register {
+  grid-column: 5;
+}
