@@ -1,10 +1,22 @@
 .navbar {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-self: center;
 }
 
 .logo {
   grid-column: 1;
+  display: grid;
+  justify-items: center;
+  align-self: center;
+}
+
+.logo-image {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .search-bar {
@@ -13,10 +25,26 @@
   width: 100%;
 }
 
+.search-button {
+  width: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .login {
   grid-column: 4;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .register {
   grid-column: 5;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
