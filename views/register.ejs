@@ -15,9 +15,12 @@
 
   <body>
     <% include partials/_navbar.ejs %>
-    <form action="/login" method="POST">
-      <label for="username">Username</label>
-      
+    <h3>Register</h3>
+    <form action="/register" method="POST">
+      <label for="username">Username: </label>
+      <input type="text" name="username">
+      <label for="password">Password: </label>
+      <input type="text" name="password">
     </form>
   </body>
 </html>
