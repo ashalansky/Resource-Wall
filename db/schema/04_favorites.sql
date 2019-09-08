@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS favorites CASCADE;
+CREATE TABLE favorites (
+  id SERIAL PRIMARY KEY NOT NULL,
+  resource_id INTEGER REFERENCES resources(id) ON DELETE CASCADE
+);
