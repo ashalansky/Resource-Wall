@@ -10,11 +10,11 @@ module.exports = (db) => {
 
 
 
-app.post("/login", (req, res) => {
+router.post("/login", (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
   const queryString = `
-  SELECT * 
+  SELECT *
   FROM users
   WHERE username = $1`;
   const queryParams = [username];
